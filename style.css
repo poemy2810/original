@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"游ゴシック","Yu Gothic","游ゴシック体",YuGothic,sans-serif;
+    color:#1b1b1b;
+}
+
+#container{
+    width:85%;
+    float: left;
+    padding-left: 220px;
+}
+
+#main-visual{
+    position:relative;
+    width:100%;
+    height:900px;
+    background-size: cover;
+    background-image:url(images/AbeHiroshi_gray2.png);
+    object-fit: cover;
+}
+
+#menu-bar{
+    float: left;
+    width: 199px;
+    margin: 0px 12px;
+    background: #fff;
+    padding-top: 100px;
+    font-size: 17px;
+    font-weight: bold;
+    position:fixed;
+}
+
+
+nav a{
+    position: relative;
+    text-decoration: none;
+}
+
+nav a:after{
+   position: absolute;
+   bottom: -4px;
+   left: 0;
+   content: '';
+   width:90px;
+   height:2px;
+   background: #184587;
+   transform: scale(0, 1);
+   transform-origin: left top;
+   transition: transform .3s;
+}
+
+nav a:hover::after {
+   transform: scale(1, 1);
+}
+
+
+li{
+    list-style:none;
+    padding: 16px;
+    width:90px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+}
+
+.logo{
+    display: block;
+    font-size: 40px;
+    font-family: "Sawarabi Mincho", serif; 
+    width:250px;
+    color:#fff;
+    text-decoration: none;
+    position:absolute;
+    text-align: center;
+    top:30px;
+    right:20px;
+    line-height: 45px;
+}
+
+#main-visual a{
+    position: absolute;
+    right:200px;
+    top:490px;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-decoration: none;
+    padding-top: 700px;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Sawarabi Mincho", serif;
+}
+
+#main-visual a span{
+  position: absolute;
+    top:590px;
+    right:8px
+  left:9px;
+  bottom:0.5px;
+  width: 90px;
+  height: 90px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%; 
+  box-sizing: border-box;
+  color: #fff;
+font-family:sans-serif;
+}
+
+#main-visual a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin: -15px 0 0 -10px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+#main-visual a span::before {
+  position: absolute;
+  top: 28%;
+  left: 22px;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb 3s infinite;
+  animation: sdb 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#whatsnew{
+    padding-top: 30px;
+}
+
+.title{
+    font-family: "Sawarabi Mincho" ,serif; 
+    color:#184587;
+    font-size: 30.65px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.whatsnew-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.contents{
+    padding-left:250px;
+}
+
+.explain_show{
+    width:83%
+}
+
+.place{
+    display: flex;
+    justify-content: flex-start;
+}
+
+h3{
+    font-size: 23px;
+    font-family: "Sawarabi Mincho",serif; 
+    display:block;
+    width:70px;
+    height:250px;
+    float: left;
+    padding: 20px;
+    margin-left: 130px;
+}
+.about_movie h3{
+    height:100px;
+}
+
+.explain_movie{
+    padding-left: 250px;
+}
+
+#profile{
+    background-color: #f7f7f7;
+}
+
+#profile-container{
+    padding: 100px;
+    display: flex;
+}
+
+.left-box{
+    padding-right: 70px;
+    font-size: 18px;
+}
+
+p span{
+   font-family: "Sawarabi Mincho", serif; 
+    font-weight: bold;
+}
+
+.profile-top{
+    padding-bottom: 50px;
+}
+
+#profile img{
+    width:300px;
+    height:300px;
+    object-fit: cover;
+}
