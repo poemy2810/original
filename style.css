@@ -5,7 +5,7 @@
     color:#1b1b1b;
 }
 
-#container{
+.container{
     width:85%;
     float: left;
     padding-left: 220px;
@@ -14,13 +14,13 @@
 #main-visual{
     position:relative;
     width:100%;
-    height:900px;
+    height:100vh;
     background-size: cover;
     background-image:url(images/AbeHiroshi_gray2.png);
     object-fit: cover;
 }
 
-#menu-bar{
+.menu-bar{
     float: left;
     width: 199px;
     margin: 0px 12px;
@@ -43,7 +43,7 @@ nav a:after{
    left: 0;
    content: '';
    width:90px;
-   height:2px;
+   height:1.5px;
    background: #184587;
    transform: scale(0, 1);
    transform-origin: left top;
@@ -80,33 +80,29 @@ li{
 
 #main-visual a{
     position: absolute;
-    right:200px;
-    top:490px;
+    right:700px;
+    top:440px;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     text-decoration: none;
     padding-top: 700px;
-    font-size: 20px;
-    color: #fff;
     font-family: "Sawarabi Mincho", serif;
+    font-size: 20px;
 }
 
 #main-visual a span{
   position: absolute;
-    top:590px;
-    right:8px
-  left:9px;
-  bottom:0.5px;
-  width: 90px;
-  height: 90px;
-  margin-left: -23px;
-  border: 1px solid #fff;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #184587;
   border-radius: 100%; 
+  padding: 20px;
   box-sizing: border-box;
-  color: #fff;
-font-family:sans-serif;
+  color: #184587;
+  font-family: "Sawarabi Mincho", serif;
+  
 }
 
 #main-visual a span::after {
@@ -117,11 +113,12 @@ font-family:sans-serif;
   width: 20px;
   height: 20px;
   margin: -15px 0 0 -10px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-left: 1px solid #184587;
+  border-bottom: 1px solid #184587;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
+     
 }
 
 #main-visual a span::before {
@@ -174,7 +171,7 @@ font-family:sans-serif;
     padding-top: 30px;
 }
 
-.title{
+h1{
     font-family: "Sawarabi Mincho" ,serif; 
     color:#184587;
     font-size: 30.65px;
@@ -246,4 +243,82 @@ p span{
     width:300px;
     height:300px;
     object-fit: cover;
+}
+
+.movie_contents h2{
+    font-family: "Sawarabi Mincho", serif;
+    margin-left: 35px;
+    padding-top: 10px;
+}
+
+.category{
+    text-align: left;
+    margin-left:30px
+}
+
+#movie_intro p{
+    padding: 30px;
+    padding-top: 40px;
+}
+
+#year_2020{
+        background-color: #f7f7f7;
+}
+
+#year_2018{
+    display: flex;
+    flex-direction: column;
+}
+
+#year_2017{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+}
+
+.movie_contents img{
+    width:180px;
+    height:270px;
+    object-fit: contain;
+    padding-right: 55px;
+}
+
+.movie_contents{
+    padding: 20px;
+}
+
+#container_2020{
+     display:flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 30px;
+    padding-top: 15px;
+}
+
+#container_2018{
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 30px;
+    padding-top: 5px;
+}
+
+#container_2017{
+     display:flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 30px;
+        padding-top: 5px;
+}
+
+#book_2{
+    background-color: #f7f7f7;
+}
+
+#kigeki{
+    float: left;
+}
+
+#book_2 img{
+    float: left;
 }
