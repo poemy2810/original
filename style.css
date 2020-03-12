@@ -319,19 +319,28 @@ p span{
     background-color: #f7f7f7;
 }
 
-#kigeki{
-    float: left;
-}
-
-#book_2 img{
-    float: left;
-}
-
 h2{
     font-family: "Sawarabi Mincho" ,serif; 
 }
 
+.book_page{
+    display: flex;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.btn_more{
+    color:#fff;
+    text-decoration: none;
+    background-color: #333;
+    padding: 12px 75px;
+    font-size: 13px;
+}
+
 .book_page img{
     width:20%;
-    
+}
+
+.book_script{
+    padding-bottom: 20px;
 }
