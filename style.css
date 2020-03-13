@@ -33,6 +33,7 @@
 
 
 nav a{
+    width:auto;
     position: relative;
     text-decoration: none;
 }
@@ -42,7 +43,7 @@ nav a:after{
    bottom: -4px;
    left: 0;
    content: '';
-   width:90px;
+   width:100%;
    height:1.5px;
    background: #184587;
    transform: scale(0, 1);
@@ -321,6 +322,10 @@ p span{
     background-color: #f7f7f7;
 }
 
+#book_2{
+    margin-left: 200px;
+}
+
 #book_1 img{
     margin-right: 80px;
 }
@@ -389,11 +394,36 @@ p span{
 }
 
 .modal_content{
-    background: #fff;
+    background-color: #fff;
     left: 50%;
     padding: 40px;
     position: absolute;
     top: 50%;
     transform: translate(-50%,-50%);
+    height:50vh;
     width: 50%;
+}
+
+.modal_content img{
+    opacity:0.3;
+}
+
+.modal_content h2 + p{
+    z-index: 2;
+}
+
+.modal_content a{
+    background-color: #333;
+    color:#fff;
+    font-size: 30px;
+    width: 10px;
+    height: 10px;
+    line-height:normal;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+#modal02_content{
+    max-height:80vh;
+    overflow: scroll;
 }
