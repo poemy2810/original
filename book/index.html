@@ -10,13 +10,13 @@
 <body>
     <div class="menu-bar">
         <nav>
-            <li id="li_top"><a href="/index.html">トップ</a></li>
-            <li id="li_movie"><a href="/movie/index.html">映画出演</a></li>
-            <li id="li_drama"><a href="">ドラマ出演</a></li>
-            <li id="li_show"><a href="">舞台出演</a></li>
-            <li id="li_picture"><a href="">写真集</a></li>
-            <li id="li_book"><a href="index.html">出版本</a></li>
-            <li id="li_admin"><a href="">管理者</a></li>
+            <li><a href="/index.html">トップ</a></li>
+            <li><a href="/movie/index.html">映画出演</a></li>
+            <li><a href="">ドラマ出演</a></li>
+            <li><a href="">舞台出演</a></li>
+            <li><a href="">写真集</a></li>
+            <li><a href="index.html">出版本</a></li>
+            <li><a href="">管理者</a></li>
         </nav>
     </div>
     
@@ -24,32 +24,45 @@
        <div id="book_intro">
            <h1 class="category">阿部寛の出版本</h1>
        </div>
+       
         <section class="book_page" id="book_1">
            <div class="script" id="kigeki">
                 <h2>「アベちゃんの喜劇」</h2>
                 <p>著者：阿部寛<br>定価：533円＋税<br>発売日：2002/11/20<br>出版社：集英社ビー文庫</p>
-                <a class="js-modal-open" href="">詳しく見る   ></a>
-                
+                <a class="js-modal-open" href="" data-target="modal01">詳しく見る   ></a> 
            </div>
            <img src="/images/Book_Kigeki.jpg" alt="">
-           <div class="modal js-modal">
+           
+           <div class="modal js-modal" id="modal01">
                 <div class="modal_bg js-modal-close">
-                <div class="modal_content">
-                   <p>aaaaaaa</p>
-                    <a class="js-modal-close" href="">×</a>
+                    <div class="modal_content">
+                        <p>aaaaaaa</p>
+                        <img src="/images/Book_Kigeki.jpg">
+                        <a class="js-modal-close" href="">閉じる</a>
+                    </div>
                 </div>
-                </div>
-                </div>
+            </div>
         </section>
+        
         <section class="book_page" id="book_2">
           <img src="/images/Book_Higeki.jpg">
            <div class="script" is="higeki">
-                <h2>「アベちゃんの悲劇」</h2>
-                <p>著者：阿部寛<br>定価：533円＋税<br>発売日：1998/11/26<br>出版社：集英社ビー文庫</p>
-                <a class="js-modal-open" href="">詳しく見る   ></a>
-           </div>
-           
+                    <h2>「アベちゃんの悲劇」</h2>
+                    <p>著者：阿部寛<br>定価：533円＋税<br>発売日：1998/11/26<br>出版社：集英社ビー文庫</p>
+                    <a class="js-modal-open" href="" data-target="modal02">詳しく見る   ></a>
+            </div>
+                   
+            <div class="modal js-modal" id="modal02">
+                <div class="modal_bg js-modal-close">
+                    <div class="modal_content">
+                        <p>aaaaaaa</p>
+                        <img src="/images/Book_Higeki.jpg">
+                        <a class="js-modal-close" href="">閉じる</a>
+                    </div>
+                </div>
+            </div>
         </section>
+        
     </div>
     
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
