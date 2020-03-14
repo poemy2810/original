@@ -56,7 +56,7 @@ nav a:after{
    background: #184587;
    transform: scale(0, 1);
    transform-origin: left top;
-   transition: transform .3s;
+   transition: transform 0.3s;
 }
 
 nav a:hover::after {
@@ -325,6 +325,7 @@ p span{
     padding: 30px;
     padding-top: 5px;
 }
+    
 
 #book_1{
     background-color: #f7f7f7;
@@ -373,7 +374,8 @@ p span{
     color:#fff;
     text-decoration: none;
     background-color: #333;
-    padding: 14px 109px;
+    padding: 14px 99px;
+    display:inline-block;
     font-size: 13px;
     border: 0.5px solid #184587;
 }
@@ -390,6 +392,7 @@ p span{
     font-size: 35px;
     width: 35px;
     height: 35px;
+    display:block;
     line-height: 35px;
     padding: 8px 10px;
     text-decoration: none;
@@ -425,11 +428,20 @@ p span{
     transform: translate(-50%,-50%);
     height:50vh;
     width: 50%;
+    position:relative;
 }
-
+    
+.modal_content img{
+    width:30%;
+    opacity:0.3;
+    position:absolute;
+    top:30px;
+    right:20px;
+    z-index:-1;
+}
 .modal_content p{
     line-height:2;
-    padding: 40px;
+    padding: 20px 30px;
     padding-top: 0;
 }
 
@@ -444,10 +456,6 @@ p span{
     
 }
 
-.modal_content img{
-    opacity:0.3;
-}
-
 .btn_purchase{
     text-decoration: none;
     background: #333;
@@ -457,8 +465,8 @@ p span{
     display: block;
     text-align: center;
     width: 200px;
-    margin: 0 auto;   
-    margin-bottom: 30px;
+    margin: 10px auto;   
+    z-index: 1;
 }
 
 
