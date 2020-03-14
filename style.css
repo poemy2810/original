@@ -439,6 +439,7 @@ p span{
     right:20px;
     z-index:-1;
 }
+    
 .modal_content p{
     line-height:2;
     padding: 20px 30px;
@@ -513,10 +514,10 @@ p span{
     }
     
     .container{
-    width:100vw;
+    width:100%;
     float: left;
     }
-    
+
     .logo{
     display: block;
     font-size: 20px;
@@ -573,11 +574,221 @@ p span{
         display:none;
     }
     
+    .category{
+    text-align: left;
+    margin-left:30px;
+    padding-top: 10px;
+    width: 80vw;
+    }
+
     nav a{
-        display: none;
+    display: none;
     }
     
-    #main-visual{
-        100vw;
+    
+    #movie_intro p{
+    width:80vw;
+    font-size: 12px;
+    padding: 30px;
     }
+    
+    .movie_contents{
+    padding: 20px;
+    width:91%;
+    }
+    
+    #year_2020{
+        background-color: #f7f7f7;
+    }
+
+    #year_2018{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #year_2017{
+        display: flex;
+        flex-direction: column;
+        background-color: #f7f7f7;
+    }
+    
+    #container_2020{
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    }
+
+    #container_2018{
+        display:flex;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    #container_2017{
+        display:flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .movie_contents img{
+        width:90px;
+        height:auto;
+        object-fit: contain;
+        padding-right: 15px;
+    }
+    
+    .movie_contents h2{
+    font-family: "Sawarabi Mincho", serif;
+    padding-bottom: 10px;
+}
+
+    .movie_contents a{
+    text-decoration: none;
+    font-size: 9px;
+    display: inline-block;
+    }
+    
+    #book_1{
+    background-color: #f7f7f7;
+    }
+
+    .book_page{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    font-size: 12px;
+    height:40vh;
+    }
+
+    .book_page img{
+        width:150px;
+        height:auto;
+        object-fit:contain;
+    }
+
+    .book_page h2{
+        font-family: "Sawarabi Mincho" ,serif; 
+        font-size: 15px;
+        margin-top: 50px;
+    }
+    
+    .book_page h2{
+        font-family: "Sawarabi Mincho" ,serif; 
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .book_page p{
+        padding: 10px 0px;
+    }
+    
+    .script{
+        padding: 50px;
+    }
+    
+.js-modal-open{
+    color:#fff;
+    text-decoration: none;
+    background-color: #333;
+    padding: 8px 2px;
+    display:block;
+    font-size: 10px;
+    text-align: center;
+    border: 0.5px solid #184587;
+}
+
+.js-modal-open:hover{
+    background: #fff;
+    color: #184587;
+    transition:0.5s;
+}
+
+.js-modal-close{
+    background-color: #333;
+    color:#fff;
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+    display:inline-block;
+    line-height: 35px;
+    padding: 8px 10px;
+    text-decoration: none;
+    float: right;
+}
+
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.modal_bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: fixed;
+    left:0;
+    width: 100vw;
+}
+
+.modal_content{
+    background-color: #fff;
+    left: 50%;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height:30vh;
+    width: 70%;
+    position:relative;
+}
+    
+.modal_content img{
+    width:30%;
+    opacity:0.3;
+    position:absolute;
+    top:90px;
+    right:20px;
+    z-index:-1;
+}
+    
+.modal_content p{
+    line-height:1.3;
+    font-size: 10px;
+    padding: 20px 30px;
+    padding-top: 0;
+}
+
+.modal_content h2{
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.modal_content h4{
+    font-size: 12px;
+    padding-left: 40px;
+    
+}
+
+.btn_purchase{
+    text-decoration: none;
+    background: #333;
+    color:#fff;
+    padding: 2px 0px;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin: 10px auto;   
+    z-index: 1;
+}
+
+
+#modal02_content{
+    max-height:80vh;
+    overflow: scroll;
+}
+    
 }
