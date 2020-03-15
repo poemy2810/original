@@ -473,6 +473,10 @@ p span{
     margin: 10px auto;   
     z-index: 1;
 }
+    
+    .shopping-icon{
+        color: #fff;
+    }
 
 
 #modal02_content{
